@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,       // Allow to compile .js files
+    "checkJs": false,      // (Optional) Define as false to check errors in .js files
+    "outDir": "dist",      // Output folder
+    "target": "es6",       
+    "module": "es2020",    // Or "esnext"
+    "moduleResolution": "node",
+  },
+  "include": ["src/**/*"],	// Folders to be included
+  "exclude": ["src/lwc/**/*"]	//Fodlers to be excluded
+}

@@ -1,0 +1,10 @@
+{
+    "modules": [
+        {
+            "dir": "src/lwc/modules"
+        },
+        {
+            "npm": "lightning-base-components"
+        }
+    ]
+}

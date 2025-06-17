@@ -1,0 +1,45 @@
+{
+    "private": true,
+    "name": "node-lwc",
+    "version": "0.1.0",
+    "type": "module",
+    "description": "Demo project with LWC, Node.js, TypeScript and SLDS.",
+    "scripts": {
+        "dev:lwc": "rollup -c --watch",
+        "dev:nodemon": "nodemon",
+        "dev": "run-p dev:*",
+        "build:lwc": "cross-env NODE_ENV=production rollup -c",
+        "build:ts": "tsc",
+        "build": "run-p build:*",
+        "start": "node dist/app.js"
+    },
+    "devDependencies": {
+        "@lwc/rollup-plugin": "8.19.1",
+        "@lwc/synthetic-shadow": "^8.20.0",
+        "@rollup/plugin-replace": "^6.0.2",
+        "@types/express": "^5.0.3",
+        "cross-env": "^7.0.3",
+        "lightning-base-components": "^1.27.2-alpha",
+        "lwc": "8.19.1",
+        "nodemon": "^3.1.10",
+        "npm-run-all": "^4.1.5",
+        "rollup": "^4.40.0",
+        "rollup-plugin-livereload": "^2.0.5",
+        "rollup-plugin-serve": "^3.0.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.3"
+    },
+    "nx": {
+        "targets": {
+            "build": {
+                "outputs": [
+                    "{projectRoot}/dist"
+                ]
+            }
+        }
+    },
+    "dependencies": {
+        "@salesforce-ux/design-system": "^2.27.1",
+        "express": "^5.1.0"
+    }
+}

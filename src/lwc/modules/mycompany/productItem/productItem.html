@@ -1,0 +1,15 @@
+<template>
+    <template if:true={product}>
+        <lightning-layout class="slds-m-around_medium" multiple-rows>
+            <lightning-layout-item size="4">Price: {product.price}</lightning-layout-item>
+            <lightning-layout-item size="4">Category: {product.category}</lightning-layout-item>
+            <lightning-layout-item size="4">
+                <lightning-button variant="brand" label="Add to Cart" onclick={addToCart}></lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item size="12">Description: {product.description}</lightning-layout-item>
+        </lightning-layout>
+    </template>
+    <template if:true={error}>
+        <p>Error: {error}</p>
+    </template>
+</template>
